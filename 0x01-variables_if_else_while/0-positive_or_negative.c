@@ -11,15 +11,11 @@ int n;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-char str1[]= "is negative";
-char str2[]= "is zero";
-char str3[]= "is positive";
-
     if(n==0)
-        printf("%d %s\n", n, str2);
+        printf("%d %s\n", n, "is zero\n);
     else if(n>0)
-        printf("%d %s\n", n ,str3);
+        printf("%d %s\n", n ,"is positive\n");
     else
-        printf("%d %s\n", n ,str1);
+        printf("%d %s\n", n ,"is negative\n");
     return (0);
 }
