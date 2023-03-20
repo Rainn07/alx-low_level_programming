@@ -10,7 +10,7 @@
 int main(void)
 {
 	int single_num;
-	
+
 	for (single_num = 0; single_num <= 9; single_num++)
 	{
 		printf("%d", single_num);
