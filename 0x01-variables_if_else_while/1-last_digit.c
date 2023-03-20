@@ -20,16 +20,16 @@ int main(void)
 	if (last_digit == 0)
 	{
 		printf("%s%d", "Last digit of", n);
-		printf("%s%d%s\n", " is", last_digit, "and is 0");
+		printf("%s%d%s\n", " is ", last_digit, " and is 0");
 	} else if (last_digit < 6 && last_digit != 0)
 	{
 		printf("%s%d", "Last digit of", n);
-		printf("%s%d%s\n", " is", last_digit, "and is less than 6 and not 0");
+		printf("%s%d%s\n", " is ", last_digit, " and is less than 6 and not 0");
 	}
 	else
 	{
 		printf("%s%d", "Last digit of", n);
-		printf("%s%d%s\n", "is", last_digit, "and is greater than 5");
+		printf("%s%d%s\n", "is ", last_digit, " and is greater than 5");
 	}
 	return (0);
 }
