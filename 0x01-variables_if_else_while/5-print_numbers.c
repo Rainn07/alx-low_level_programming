@@ -14,5 +14,6 @@ int main(void)
 	{
 		printf("%d", single_num);
 	}
+	putchar('\n');
 	return (0);
 }
