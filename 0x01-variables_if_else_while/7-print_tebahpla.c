@@ -10,7 +10,7 @@ int main(void)
 {
 	char esaclower;
 
-	for (esaclower = 'z'; esaclower <= 'a'; esaclower++)
+	for (esaclower = 'z'; esaclower <= 'a'; esaclower--)
 	{
 		putchar(esaclower);
 	}
