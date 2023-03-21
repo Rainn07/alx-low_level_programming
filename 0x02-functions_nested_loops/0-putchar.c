@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 /**
  * main - prints a single character c to the stdout
  *
@@ -12,7 +12,7 @@ void main(void)
 	char str[] = "_putchar";
 	int len = stren(str);
 
-	for int i = 0; i < len; i++)
+	for (int i = 0; i < len; i++)
 	{
 		_putchar(str[i]);
 	}
