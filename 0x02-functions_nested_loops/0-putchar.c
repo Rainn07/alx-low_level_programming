@@ -7,14 +7,17 @@
  *
  * Return: 0 (Success)
  */
-void main(void)
+int main(void)
 {
-	char str[] = "_putchar";
-	int len = strlen(str);
-
-	for (int i = 0; i < len; i++)
-	{
-		_putchar(str[i]);
-	}
+	_putchar('-');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
+
+	return (0);
 }
