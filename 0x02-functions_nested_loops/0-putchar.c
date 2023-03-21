@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <main.h>
+#include <unistd.h>
+
 /**
- * Printer - prints the word "_putchar"
+ * _putchar - prints a single character c to the stdout
  *
- * no parameters
+ * @ param c: the character to be printed
  *
- * Return: Void (Success)
+ * Return: 1 (Success)
  */
-void Printer(void)
+void _putchar(void)
 {
-	printf("%s \n", "_putchar");
+	printf("%c",c);
 }
