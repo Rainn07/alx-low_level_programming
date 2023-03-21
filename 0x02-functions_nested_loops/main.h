@@ -5,13 +5,14 @@
  * This is a header file for the 0x02 C project
  */
 
-void _putchar(char c);
 
-/** prints a cingle character.
+/** prints a single character.
  *
  * @param c the character to be printed.
  *
  * @return void (success)
  */
+ void _putchar(char c);
+
 
 #endif /* MAIN_H */

@@ -1,16 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <main.h>
-#include <unistd.h>
 
 /**
- * _putchar - prints a single character c to the stdout
+ * main - prints a single character c to the stdout
  *
  * @ param c: the character to be printed
  *
- * Return: 1 (Success)
+ * Return: 0 (Success)
  */
-void _putchar(void)
+void main(void)
 {
-	printf("%c",c);
+	char str[] = "_putchar";
+	int len = stren(str);
+
+	for int i = 0; i < len; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
