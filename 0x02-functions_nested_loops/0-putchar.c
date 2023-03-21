@@ -14,7 +14,7 @@ int main(void)
 	int len = strlen(str);
 	int i = 0;
 
-	for (i = 0; 1 < len; i++)
+	for (i = 0; i < len; i++)
 	{
 		_putchar(str[i]);
 	}
