@@ -1,15 +1,19 @@
 #include <stdio.h>
 #include "main.h"
-/** print_alphabet - prints out the alphabet
+/**
+ * print_alphabet - prints the letters of the alphabet
  *
- * Return: void
+ * no parameters
+ *
+ * Return: Void
  */
+
 void print_alphabet(void)
 {
 	char c;
 		for (c = 'a'; c <= 'z'; c++)
 		{
-			putchar(c);
+			_putchar(c);
 		}
-	putchar('\n');
+	_putchar('\n');
 }
