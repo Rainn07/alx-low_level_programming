@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <string.h>
 /**
@@ -9,15 +10,14 @@
  */
 int main(void)
 {
-	putchar('_');
-	putchar('p');
-	putchar('u');
-	putchar('t');
-	putchar('c');
-	putchar('h');
-	putchar('a');
-	putchar('r');
-	putchar('\n');
+	char str[] = "_putchar";
+	int len = strlen(str);
+
+	for (int i = 0; 1 < len; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 
 	return (0);
 }
