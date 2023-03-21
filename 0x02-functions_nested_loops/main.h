@@ -12,7 +12,7 @@
  *
  * @return void (success)
  */
- void _putchar(char c);
+int _putchar(char c);
 
 
 #endif /* MAIN_H */
