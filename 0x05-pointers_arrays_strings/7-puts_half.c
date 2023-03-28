@@ -8,7 +8,6 @@
  */
 void puts_half(char *str)
 {
-	int i;
 	int length = 0;
 
 	/*loop to find length of str*/
@@ -28,7 +27,7 @@ void puts_half(char *str)
 	while (str[length] != '\0')
 	{
 		length++;
-		_putchar(str[length];
+		_putchar(str[length]);
 	}
 	_putchar('\n');
 }
