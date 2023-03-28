@@ -7,24 +7,26 @@
  *
  * Return: dest
  */
-char *_strcpy(char dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int n = 0;
-	int i = 0;
-	int j = 1;
+	int i;
 
-	while (str[n] != '\0')
+	while (src[n] != '\0')
 	{
 		n++;
 	}
+	i = 0;
 	while (i < n && src[i] != '\0')
 	{
-		dest[i] = scr[i];
+		dest[i] = src[i];
 		i++;
 	}
-	while (j <= n)
+	i = i;
+	while (i <= n)
 	{
 		dest[i] = '\0';
+		i++;
 	}
 	return (dest);
 }
