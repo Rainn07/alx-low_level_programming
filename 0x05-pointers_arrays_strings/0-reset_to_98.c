@@ -4,6 +4,8 @@
  *
  * @n: parameter, a pointer to an int
  *
+ * Return: Void
+ *
  */
 void reset_to_98(int *n)
 {
