@@ -19,7 +19,7 @@ char *_strncat(char *dest, char *src, int n)
 		/*going to the end of the str address*/
 		ptr++;
 	}
-	for (i = 0; i < n && *src[i] != '\0'; i++)
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 		*ptr++ = *src++;
 	}
