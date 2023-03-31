@@ -19,6 +19,4 @@ void reverse_array(int *a, int n)
 		*(a + 1) = *(a + j);
 		*(a + j) = temp;
 	}
-	return (temp);
 }
-
