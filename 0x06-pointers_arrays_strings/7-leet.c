@@ -7,10 +7,11 @@
  *
  * Return: Encoded str
  */
+
 char *leet(char *str)
 {
 	char *vowel = "aeotl";
-	char *leet_characters = "4433771100";
+	char *leet_characters = "43071";
 	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
