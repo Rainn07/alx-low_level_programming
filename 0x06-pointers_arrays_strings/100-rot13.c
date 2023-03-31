@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <ctype.h>
 /**
  * rot13 - function that encodes
  * a string by shifting the alphabets
