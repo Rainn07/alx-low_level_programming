@@ -11,7 +11,7 @@
  * Return: Void
  */
 
-char *_memset(char *s, int b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int index;
 
