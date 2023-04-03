@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+
 /**
  * _strstr - finds a first instance of substring
  *
@@ -29,5 +29,5 @@ char *_strstr(char *haystack, char *needle)
 		else
 			return (haystack);
 	}
-	return (NULL);
+	return ('\0');
 }
