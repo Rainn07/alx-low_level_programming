@@ -10,13 +10,15 @@
  *
  * Return: Void
  */
+
 char *_memset(char *s, int b, unsigned int n)
 {
 	unsigned int index;
 
 	for (index = 0; index < n; index++)
+	{
 		s[index] = b;
-
+	}
 	return (s);
 }
 
