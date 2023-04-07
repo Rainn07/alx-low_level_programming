@@ -1,6 +1,3 @@
-#indef MAIN_H
-#define MAIN_H
-
 /**
  * file: main.h
  * Auth: Jaxn Mzimela
