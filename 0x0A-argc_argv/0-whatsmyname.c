@@ -4,7 +4,7 @@
  * main - funct that prints its own name
  * @argc: number of arguments
  * @argv: vector array of pointers
- * 
+ *
  * Return: 0 success.
  */
 
