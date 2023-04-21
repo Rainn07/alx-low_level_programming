@@ -1,16 +1,17 @@
 #include "stdio.h"
 #include <stdlib.h>
-/** main - prints the product of arguments
+/**
+ * main - prints the product of arguments
  * @args: number of arguments
  * @argv: vector array of pointers
  *
  * Return: 0 Success
- * 	   1 for failure
+ *	   1 for failure
  */
 int main(int args, char *argv[])
 {
 	int num1, num2;
-	
+
 	if (args != 3)
 	{
 		printf("Error\n");
