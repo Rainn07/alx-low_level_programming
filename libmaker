@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#set dir containing files
+dir=0x09-static_libraries
+
+for file in $dir/.c; do
+gcc -c "$file" -o "${file%.c}.o"
+done
