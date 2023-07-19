@@ -7,19 +7,20 @@
  * 
  * Return: 1 for posint, 0 failure
  */
+
 int pos_int(char *str)
 {
 	while(*str)
-	{
-	
+	{	
 		if(!isdigit(*str))
 		{
 			return 0;
 		}
-	str++
+	str++;
 	}
 return 1;
 }
+
 /** 
  * main - adds two positive numbers & print
  * @argc: number of arguments
@@ -31,21 +32,30 @@ return 1;
 
 int main(int argc, char *argv[])
 {
-	int i = 0;
-	int count = 0;
+	int i;
+	int count;
+	int num;
+
+	i = 0;
+	count = 0;
 
 	if(argc != 1)
 	{
-		for (; i < argc; i++)
+		for (i = 1 ; i < argc; i++)
 		{
 			if ( !pos_int(argv[i]))
 			{
 				printf("Error\n");
 				return 1;
 			}
-		int num = atoi(argv[i]);
+		num = atoi(argv[i]);
 		count += num;
 		}
-		printf("%d\n", sum);
+		printf("%d\n", count);
 	}
-   printf("%d\n", 0)
+	else
+	{
+   printf("%d\n", 0);
+	}
+   return 0;
+}
