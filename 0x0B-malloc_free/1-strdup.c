@@ -26,6 +26,9 @@ char *_strdup(char *str)
 
 	temp = malloc(sizeof(char) * (len + 1));
 	/*len + 1 for the number of arguments*/
+	if (temp == NULL)
+		return (NULL);
+	/*checking malloc return*/
 
 	for (count = 0; str[count]; count++)
 		temp[count] = str[count];
