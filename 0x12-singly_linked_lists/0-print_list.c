@@ -5,7 +5,7 @@
 #include <stddef.h>
 /**
  * print_list - prints all elements in linked list
- * @h: linked list to be printed
+ * @h: pointer to linked list to be printed
  *
  * Return: the number of nodes
  */
@@ -16,21 +16,18 @@ size_t print_list(const list_t *h)
 	size_t number_of_nodes = 0;
 
 /* empty list condition */
-	if (h == NULL)
+	while (h)
 	{
-	printf("[0] (nil)\n");
-	return (number_of_nodes);
-	}
+	if (h->str == NULL)
+		printf("[0] (nil)\n");
+		return (number_of_nodes);
 
-/*iterate through list and print*/
-	const list_t *current = h;
+	else
+		printf("[%u] %s\n", h->len, h->str);
 
-	while (current != NULL)
-	{
-	printf("%d %s\n", current->len, h->str);
-	current = current->next;
+
+	h = h->next;
 	number_of_nodes++;
 	}
-	printf("\n");
 	return (number_of_nodes);
 }
