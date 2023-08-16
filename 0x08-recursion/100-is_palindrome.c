@@ -1,30 +1,36 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
+#include <stdio.h>
 
-/** is_palindrome - check is str arg is palindrome
- * @s: pointer to str arg
- *
- * Return: 1 for success, ) for failure
+/**
+ * is_palin - checks is start char equal end char
+ * @s: char point to str
+ * @start: start char
+ * @end: end char
+ * Return: 1 Success
  */
 
+int is_palin(char *s, int start, int end)
+{
+	if (start >= end)
+		return (1);
+
+	if (s[start] != s[end])
+		return (0);
+
+	return (is_palin(s, start + 1, end - 1));
+}
+/**
+ * is_palindrome - checks if str is palindrome
+ * @s: char pointer to str to be checked
+ *
+ * Return: 1 for palindrome, ) if not.
+ */
 int is_palindrome(char *s)
 {
 	int len = 0;
-	int start = 0;
-	int end;
 
-	while (s[len])
+	while (s[len] != '\0')
 		len++;
 
-	end = len - 1;
-
-	while (start < end)
-	{
-		if (s[start] != s[end])
-			return (0);
-		start++;
-		end--;
-	}
-	return 1;
+	return (is_palin(s, 0, len - 1));
 }
