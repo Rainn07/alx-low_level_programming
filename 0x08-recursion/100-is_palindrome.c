@@ -27,10 +27,7 @@ int is_palin(char *s, int start, int end)
  */
 int is_palindrome(char *s)
 {
-	int len = 0;
-
-	while (s[len] != '\0')
-		len++;
+	int len = _strlen_recursion(char *s);
 
 	return (is_palin(s, 0, len - 1));
 }
