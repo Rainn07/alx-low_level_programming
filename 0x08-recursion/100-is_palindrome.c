@@ -25,7 +25,7 @@ int is_palin(char *s, int start, int end)
  *
  * Return: 1 for palindrome, ) if not.
  */
-int is_palindrome(char s)
+int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
 
