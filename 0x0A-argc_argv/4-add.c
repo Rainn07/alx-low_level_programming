@@ -25,7 +25,6 @@ return (1);
 /**
  * main - adds two positive numbers & print
  * pos_int - check in arg is pos int
- * @str: value to be checked if pos int
  * @argc: number of arguments
  * @argv: vector array of pointers
  *
