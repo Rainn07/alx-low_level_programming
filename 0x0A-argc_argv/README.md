@@ -1,3 +1,0 @@
-#My Directory: Argc, argv
-
-
