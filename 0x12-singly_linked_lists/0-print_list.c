@@ -12,12 +12,15 @@ size_t print_list(const list_t *h)
 {
 /* number of elements in list */
 	size_t number_of_nodes = 0;
+	char err_msg;
 
+	err_msg = "[0] (nil)";
 
 	while (h)
 	{
 	if (!h->str)
-		printf("[0] (nil)\n");
+		for (int i = 0; i < 9; i++)
+			putchar(err_msg[i]);
 	else
 		printf("%s [%u]\n", h->str, h->len);
 
