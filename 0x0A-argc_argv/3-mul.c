@@ -19,12 +19,13 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
 
 	arg1 = atoi(argv[1]);
 	arg2 = atoi(argv[2]);
+
 	product = arg1 * arg2;
 
 	printf("%d\n", product);
