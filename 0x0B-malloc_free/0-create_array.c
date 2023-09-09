@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 /**
- * creat_array - creates array with filler char
+ * create_array - creates array with filler char
  * @size: unsigned int, size multiplier
  * @c: The char to fill array
  *
