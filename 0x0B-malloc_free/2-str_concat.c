@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 /**
- * _str_concat - return ptr to 2 concatenated str
+ * str_concat - return ptr to 2 concatenated str
  * @s1: first string
  * @s2: second string
  *
@@ -16,7 +16,7 @@
  * Return: NULL if str == NULL
  *	return ptr to copied str - success.
  */
-char *_str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	int counter, concat_counter = 0, len = 0;
 	char *placeholder;
