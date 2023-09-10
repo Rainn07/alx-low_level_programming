@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	for (counter = 0; s1[counter] || s2[counter]; counter++)
 		len++;
 
-	placeholder = (char *)malloc((len + 1) * sizeof(char));
+	placeholder = (char *)malloc((len) * sizeof(char));
 
 	if (placeholder == NULL)
 		return (NULL);
