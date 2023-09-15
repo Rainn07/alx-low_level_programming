@@ -7,11 +7,13 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator: - performs action on
+ * array_iterator - performs action on
  *			elements of an array
  * @array: ptr to array
  * @size: size of array
  * @action: ptr to funct that to be executed
+ *
+ * Return: Void
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
