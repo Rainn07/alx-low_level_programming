@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 /*
  * Author: Jaxn
  * task 5: advanced
@@ -12,59 +14,46 @@
  * Return: always zero
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-/**
- * minCoins - Calculate the minimum number of coins required to make change
- * @cents: The amount in cents for which to make change
- *
- * Return: The minimum number of coins required to make change for 'cents'.
- */
-int minCoins(int cents)
-{
-	int coinValues[] = {25, 10, 5, 2, 1};
-	int numCoins = sizeof(coinValues) / sizeof(coinValues[0]);
-	int dp[cents + 1];
-
-	dp[0] = 0;
-
-	for (int i = 1; i <= cents; i++)
-	{
-		dp[i] = cents + 1;
-		for (int j = 0; j < numCoins; j++)
-		{
-			if (i >= coinValues[j] && dp[i - coinValues[j]] + 1 < dp[i])
-			{
-				dp[i] = dp[i - coinValues[j]] + 1;
-			}
-		}
-	}
-
-	return (dp[cents]);
-}
-
 int main(int argc, char *argv[])
 {
+	int cents, coins = 0;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	int cents = atoi(argv[1]);
-
+	cents = atoi(argv[1]);
 	if (cents < 0)
-	{
 		printf("0\n");
-	}
 	else
 	{
-		int result = minCoins(cents);
-
-		printf("%d\n", result);
+		while (cents >= 25)
+		{
+			cents -= 25;
+			coins++;
+		}
+		while (cents >= 10)
+		{
+			cents -= 10;
+			coins++;
+		}
+		while (cents >= 5)
+		{
+			cents -= 5;
+			coins++;
+		}
+		while (cents >= 2)
+		{
+			cents -= 2;
+			coins++;
+		}
+		while (cents >= 1)
+		{
+			cents -= 1;
+			coins++;
+		}
+		printf("%d\n", coins);
 	}
-
 	return (0);
 }
-
