@@ -1,12 +1,19 @@
-#include <stdio.h>
+#include "lists.h"
+
+/*
+ * Auth: Jaxn
+ * Project: 0x12 - singly linked lists
+ * task 5: 100-first.c
+ */
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * first - function that is executed before main
+ * Return: Void
  */
-int main(void)
+void first(void) __attribute__((constructor));
+
+void first(void)
 {
-    printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
-    return (0);
+	printf("You're a beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
