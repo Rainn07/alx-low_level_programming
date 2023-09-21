@@ -1,3 +1,5 @@
+#ifndef MAIN_H
+#define MAIN_H
 /**
  * file: main.h
  * Auth: Jaxn Mzimela
@@ -13,3 +15,6 @@ int _sqrt_recursion(int n);
 int is_prime_numer(int n);
 int is_palindrome(char *s);
 int is_palin(char *s, int start, int end);
+int wildcmp(char *s1, char *s2);
+
+#endif
