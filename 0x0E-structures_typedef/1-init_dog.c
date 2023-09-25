@@ -36,7 +36,7 @@ char *_strdup(char *str)
  * init_dog - create new dog type
  * @d: dog structure name
  * @name: name of dog
- * #age: age of god
+ * @age: age of god
  * @owner: dog owner
  *
  * Return: Void
