@@ -8,7 +8,7 @@
  */
 
 /**
- * add_node_end - adds new node at end of list
+ * add_nodeint_end - adds new node at end of list
  * @head: ptr at start of existing list
  * @n: int to be added
  *
