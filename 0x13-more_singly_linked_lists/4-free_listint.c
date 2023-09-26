@@ -21,6 +21,6 @@ void free_listint(listint_t *head)
 	{
 		iterator = head->next;
 		free(head);
-		free(iterator);
+		head = iterator;
 	}
 }
