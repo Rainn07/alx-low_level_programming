@@ -8,22 +8,23 @@
  */
 
 /**
- * free_listint2 - frees a list_t list & set head to null
+ * free_listint2 - frees a listint_t list
  * @head: pointer to start of list
  *
  * Return: Void
  */
 void free_listint2(listint_t **head)
 {
-	listint_t iterator;
+	listint_t *iterator;
 
-	if (head)
+	if (head == NULL)
+		return;
+
+	while (*head)
 	{
-		while (*head)
-		{
-			iterator = *head
-			*head = iterator->next;
-			free(iterator);
-		}
+		iterator = (*head)->next;
+		free(iterator);
+		*head = iterator;
 	}
+	head = NULL;
 }
