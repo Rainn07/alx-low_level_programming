@@ -23,7 +23,7 @@ void free_listint2(listint_t **head)
 	while (*head)
 	{
 		iterator = (*head)->next;
-		free(iterator);
+		free(*head);
 		*head = iterator;
 	}
 	head = NULL;
