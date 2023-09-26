@@ -17,6 +17,7 @@ size_t print_listint(const listint_t *h)
 {
 	size_t counter;
 	const listint_t *temph = h;
+
 	counter = 0;
 
 	while (temph)

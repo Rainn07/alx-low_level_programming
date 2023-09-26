@@ -8,9 +8,9 @@
  */
 
 /**
- * add_node - adds node at the beginning of list_t list
+ * add_nodeint - adds node at the beginning of list_t list
  * @head: ptr to start of existing list
- * @str: str to be copied into new node
+ * @n: int to be added
  *
  * Return: address of new head element
  */
