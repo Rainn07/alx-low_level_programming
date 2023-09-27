@@ -5,7 +5,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * calloc - Allocates memory for arr
+ * _calloc - Allocates memory for arr
  * @nmemb: number of elements
  * @size: byte size of arr elements
  *
@@ -18,7 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	char *temp;
 	unsigned int index;
 
-	if(nmemb == 0 || size == 0)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 
 	member = malloc(size * nmemb);
