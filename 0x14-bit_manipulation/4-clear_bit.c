@@ -18,13 +18,12 @@ int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int index_binary;
 
-        /*check if index is out if range*/
-        if (index >= sizeof(unsigned long int) * 8)
-                return (-1);
+	/*check if index is out if range*/
+	if (index >= sizeof(unsigned long int) * 8)
+		return (-1);
 
-        index_binary = 1 << index;
+	index_binary = 1 << index;
 
 	*n = *n & (~index_binary);
-
-        return (1);
+	return (1);
 }
