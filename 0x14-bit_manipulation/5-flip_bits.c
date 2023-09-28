@@ -14,10 +14,10 @@
  * Return: -1 - error
  *      number of bits to flip - Success
  */
-int flip_bits(unsigned long int *n, unsigned int *m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int flip_count;
-	unsigned int xor_result;
+	unsigned long int xor_result;
 
 	xor_result = n ^ m;
 	xor_result = 0;
