@@ -7,18 +7,20 @@
 /**
  * get_bit - return value of bit at given index
  * @n: bit
+ * @index: index of bit to be returned
  *
  * Return: -1 - error
  *	value of bit - Success
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
+	unsigned long int index_binary;
+
 	/*check if index is out if range*/
 	if (index >= sizeof(unsigned long int) * 8)
 		return (-1);
 
-	if ((n & (1 << index)) == 1)
-		return (1);
-	else
-		return (0);
+	index_binary = 1 << index;
+
+	return ((n & index_binary) ? 1 : 0);
 }
