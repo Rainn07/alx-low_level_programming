@@ -4,6 +4,7 @@
  * Task: 2 return value of bit at given index
  */
 #include <stdio.h>
+#include "main.h"
 /**
  * get_bit - return value of bit at given index
  * @n: bit
